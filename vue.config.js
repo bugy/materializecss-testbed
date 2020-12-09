@@ -4,7 +4,7 @@ module.exports = {
     // don't set absolute paths, otherwise reverse proxies with a custom path won't work
     publicPath: '',
 
-    outputDir: '../web',
+    outputDir: 'build',
 
     pages: {
         index: {
