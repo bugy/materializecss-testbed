@@ -38,43 +38,11 @@
         </select>
         <label>Simple select</label>
       </div>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
+
       <div class="input-field">
         <input id="autocomplete-input" class="autocomplete" type="text">
         <label for="autocomplete-input">Autocomplete</label>
       </div>
-
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
 
     </div>
 
