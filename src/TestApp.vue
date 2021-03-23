@@ -27,6 +27,58 @@
     </div>
 
     <div class="block">
+      <h1>Select <a href="https://materializecss.com/select.html">(docs)</a></h1>
+
+      <div class="input-field">
+        <select class="simple-select">
+          <option disabled selected value="">Choose your option</option>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+          <option value="3">Option 3</option>
+        </select>
+        <label>Simple select</label>
+      </div>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <div class="input-field">
+        <input id="autocomplete-input" class="autocomplete" type="text">
+        <label for="autocomplete-input">Autocomplete</label>
+      </div>
+
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+
+    </div>
+
+    <div class="block">
       <h1>Sidenav</h1>
       <ul id="slide-out" class="sidenav">
         <li>
@@ -115,25 +167,34 @@
 
 <script>
 export default {
-  name: "TestApp",
+  name: 'TestApp',
   mounted: function () {
-    var elems = document.querySelectorAll('select');
-    var instances = M.FormSelect.init(elems, {});
+    const simpleSelects = document.querySelectorAll('.simple-select');
+    M.FormSelect.init(simpleSelects);
 
-    var elems = document.querySelectorAll('.dropdown-trigger');
-    var instances = M.Dropdown.init(elems, {});
+    const autocompletes = document.querySelectorAll('.autocomplete');
+    M.Autocomplete.init(autocompletes, {
+      data: {
+        'Apples': null,
+        'Oranges': null,
+        'Bananas': null
+      }, minLength: 0
+    });
 
-    var elems = document.querySelectorAll('.sidenav');
-    var instances = M.Sidenav.init(elems, {});
+    const dropdownTriggers = cash('.btn.dropdown-trigger');
+    M.Dropdown.init(dropdownTriggers, {});
 
-    var elems = document.querySelectorAll('.tabs');
-    var instance = M.Tabs.init(elems, {});
+    const sidenavs = document.querySelectorAll('.sidenav');
+    M.Sidenav.init(sidenavs, {});
 
-    var elems = document.querySelectorAll('.timepicker');
-    var instances = M.Timepicker.init(elems, {});
+    const tabs = document.querySelectorAll('.tabs');
+    M.Tabs.init(tabs, {});
 
+    const timePickers = document.querySelectorAll('.timepicker');
+    M.Timepicker.init(timePickers, {});
 
-  },
+    M.updateTextFields();
+  }
 }
 </script>
 
