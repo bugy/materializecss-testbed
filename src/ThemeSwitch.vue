@@ -30,5 +30,9 @@ export default {
 </script>
 
 <style scoped>
-
+.theme-switch {
+  position: fixed;
+  top: 88px;
+  right: 24px;
+}
 </style>
