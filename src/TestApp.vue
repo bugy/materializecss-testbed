@@ -28,6 +28,7 @@
         <li><a href="#slider">Slider</a></li>
         <li><a href="#switches">Switches</a></li>
         <li><a href="#checkboxes">Checkboxes</a></li>
+        <li><a href="#input-fields">Input Fields</a></li>
         <li><a href="#badges">Badges</a></li>
         <li><a href="#pagination">Pagination</a></li>
         <li><a href="#breadcrumbs">Breadcrumbs</a></li>
@@ -52,6 +53,8 @@
 
     <checkboxes-section id="checkboxes" class="block section scrollspy"/>
 
+    <input-fields-section id="input-fields" class="block section scrollspy"/>
+
     <badges-section id="badges" class="block section scrollspy"/>
 
     <pagination-section id="pagination" class="block section scrollspy"/>
@@ -71,6 +74,7 @@ import ButtonsSection from '@/sections/ButtonsSection';
 import CardsSection from '@/sections/CardsSection';
 import CheckboxesSection from '@/sections/CheckboxesSection';
 import DropdownSection from '@/sections/DropdownSection';
+import InputFieldsSection from '@/sections/InputFieldsSection';
 import PaginationSection from '@/sections/PaginationSection';
 import SelectSection from '@/sections/SelectSection';
 import SidenavSection from '@/sections/SidenavSection';
@@ -88,6 +92,7 @@ cssVars({
 export default {
   name: 'TestApp',
   components: {
+    InputFieldsSection,
     CardsSection,
     BreadcrumbsSection,
     PaginationSection,
