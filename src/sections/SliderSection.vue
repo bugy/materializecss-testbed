@@ -30,7 +30,12 @@ export default {
       },
       format: wNumb({
         decimals: 0
-      })
+      }),
+      pips: {
+        mode: 'positions',
+        values: [0, 25, 50, 75, 100],
+        density: 4
+      }
     });
 
     const ranges = document.querySelectorAll('input[type=range]');
@@ -43,5 +48,6 @@ export default {
 input[type=range],
 #fancy-slider {
   width: 500px;
+  margin-bottom: 48px;
 }
 </style>
