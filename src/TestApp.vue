@@ -13,8 +13,6 @@
       </div>
     </nav>
 
-    <ThemeSwitch/>
-
     <div class="block">
       <h4 class="header">Table of content + scrollspy <a href="https://materializecss.com/scrollspy.html">(docs)</a>
       </h4>
@@ -35,6 +33,7 @@
         <li><a href="#breadcrumbs">Breadcrumbs</a></li>
         <li><a href="#carousel">Carousel</a></li>
         <li><a href="#chips">Chips</a></li>
+        <li><a href="#collapsible">Collapsible</a></li>
       </ul>
     </div>
 
@@ -72,6 +71,10 @@
 
     <chips-section id="chips" class="block section scrollspy"/>
 
+    <collapsible-section id="collapsible" class="block section scrollspy"/>
+
+    <ThemeSwitch/>
+
   </div>
 
 </template>
@@ -84,6 +87,7 @@ import CardsSection from '@/sections/CardsSection';
 import CarouselSection from '@/sections/CarouselSection';
 import CheckboxesSection from '@/sections/CheckboxesSection';
 import ChipsSection from '@/sections/ChipsSection';
+import CollapsibleSection from '@/sections/CollapsibleSection';
 import DropdownSection from '@/sections/DropdownSection';
 import InputFieldsSection from '@/sections/InputFieldsSection';
 import PaginationSection from '@/sections/PaginationSection';
@@ -104,6 +108,7 @@ cssVars({
 export default {
   name: 'TestApp',
   components: {
+    CollapsibleSection,
     ChipsSection,
     CarouselSection,
     RadioButtonsSection,

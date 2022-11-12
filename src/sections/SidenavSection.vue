@@ -20,16 +20,36 @@
       </li>
       <li><a class="subheader">Subheader</a></li>
       <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+      <li class="no-padding">
+        <ul class="collapsible collapsible-accordion">
+          <li>
+            <a class="collapsible-header">Dropdown<i class="material-icons">arrow_drop_down</i></a>
+            <div class="collapsible-body">
+              <ul>
+                <li><a href="#!">First</a></li>
+                <li><a href="#!">Second</a></li>
+                <li><a href="#!">Third</a></li>
+                <li><a href="#!">Fourth</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li>
     </ul>
   </div>
 </template>
 
 <script>
+import 'materialize-css/js/collapsible';
+
 export default {
   name: 'SidenavSection',
   mounted() {
     const sidenavs = document.querySelectorAll('.sidenav');
     M.Sidenav.init(sidenavs, {});
+
+    const collapsible = document.querySelectorAll('.collapsible');
+    M.Collapsible.init(collapsible, {});
   }
 }
 </script>

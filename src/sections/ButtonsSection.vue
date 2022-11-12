@@ -36,8 +36,4 @@ export default {
 .buttons-block a {
   margin-right: 36px;
 }
-
-.fixed-action-btn {
-  /*position: relative;*/
-}
 </style>
