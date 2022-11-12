@@ -33,6 +33,7 @@
         <li><a href="#badges">Badges</a></li>
         <li><a href="#pagination">Pagination</a></li>
         <li><a href="#breadcrumbs">Breadcrumbs</a></li>
+        <li><a href="#carousel">Carousel</a></li>
       </ul>
     </div>
 
@@ -66,6 +67,8 @@
 
     <cards-section id="cards" class="block section scrollspy"/>
 
+    <carousel-section id="carousel" class="block section scrollspy"/>
+
   </div>
 
 </template>
@@ -75,6 +78,7 @@ import BadgesSection from '@/sections/BadgesSection';
 import BreadcrumbsSection from '@/sections/BreadcrumbsSection';
 import ButtonsSection from '@/sections/ButtonsSection';
 import CardsSection from '@/sections/CardsSection';
+import CarouselSection from '@/sections/CarouselSection';
 import CheckboxesSection from '@/sections/CheckboxesSection';
 import DropdownSection from '@/sections/DropdownSection';
 import InputFieldsSection from '@/sections/InputFieldsSection';
@@ -96,6 +100,7 @@ cssVars({
 export default {
   name: 'TestApp',
   components: {
+    CarouselSection,
     RadioButtonsSection,
     InputFieldsSection,
     CardsSection,
