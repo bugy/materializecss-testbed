@@ -10,6 +10,7 @@ import 'materialize-css/js/select';
 import 'materialize-css/js/forms';
 import 'materialize-css/js/autocomplete';
 import 'materialize-css/js/scrollspy';
+import 'materialize-css/js/range';
 import 'material-design-icons/iconfont/material-icons.css';
 import Vue from 'vue';
 import TestApp from '@/TestApp';

@@ -29,6 +29,7 @@
         <li><a href="#switches">Switches</a></li>
         <li><a href="#checkboxes">Checkboxes</a></li>
         <li><a href="#input-fields">Input Fields</a></li>
+        <li><a href="#radio-buttons">Redio Buttons</a></li>
         <li><a href="#badges">Badges</a></li>
         <li><a href="#pagination">Pagination</a></li>
         <li><a href="#breadcrumbs">Breadcrumbs</a></li>
@@ -55,6 +56,8 @@
 
     <input-fields-section id="input-fields" class="block section scrollspy"/>
 
+    <radio-buttons-section id="radio-buttons" class="block section scrollspy"/>
+
     <badges-section id="badges" class="block section scrollspy"/>
 
     <pagination-section id="pagination" class="block section scrollspy"/>
@@ -76,6 +79,7 @@ import CheckboxesSection from '@/sections/CheckboxesSection';
 import DropdownSection from '@/sections/DropdownSection';
 import InputFieldsSection from '@/sections/InputFieldsSection';
 import PaginationSection from '@/sections/PaginationSection';
+import RadioButtonsSection from '@/sections/RadioButtonsSection';
 import SelectSection from '@/sections/SelectSection';
 import SidenavSection from '@/sections/SidenavSection';
 import SliderSection from '@/sections/SliderSection';
@@ -92,6 +96,7 @@ cssVars({
 export default {
   name: 'TestApp',
   components: {
+    RadioButtonsSection,
     InputFieldsSection,
     CardsSection,
     BreadcrumbsSection,
