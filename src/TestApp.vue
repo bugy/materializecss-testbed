@@ -34,6 +34,7 @@
         <li><a href="#pagination">Pagination</a></li>
         <li><a href="#breadcrumbs">Breadcrumbs</a></li>
         <li><a href="#carousel">Carousel</a></li>
+        <li><a href="#chips">Chips</a></li>
       </ul>
     </div>
 
@@ -69,6 +70,8 @@
 
     <carousel-section id="carousel" class="block section scrollspy"/>
 
+    <chips-section id="chips" class="block section scrollspy"/>
+
   </div>
 
 </template>
@@ -80,6 +83,7 @@ import ButtonsSection from '@/sections/ButtonsSection';
 import CardsSection from '@/sections/CardsSection';
 import CarouselSection from '@/sections/CarouselSection';
 import CheckboxesSection from '@/sections/CheckboxesSection';
+import ChipsSection from '@/sections/ChipsSection';
 import DropdownSection from '@/sections/DropdownSection';
 import InputFieldsSection from '@/sections/InputFieldsSection';
 import PaginationSection from '@/sections/PaginationSection';
@@ -100,6 +104,7 @@ cssVars({
 export default {
   name: 'TestApp',
   components: {
+    ChipsSection,
     CarouselSection,
     RadioButtonsSection,
     InputFieldsSection,
