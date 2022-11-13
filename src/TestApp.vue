@@ -34,6 +34,7 @@
         <li><a href="#carousel">Carousel</a></li>
         <li><a href="#chips">Chips</a></li>
         <li><a href="#collapsible">Collapsible</a></li>
+        <li><a href="#tables">Tables</a></li>
         <li><a href="#footer">Footer</a></li>
       </ul>
     </div>
@@ -74,6 +75,8 @@
 
     <collapsible-section id="collapsible" class="block section scrollspy"/>
 
+    <tables-section id="tables-section" class="block section scrollspy"/>
+
     <footer-section id="footer" class="block section scrollspy"/>
 
     <ThemeSwitch/>
@@ -100,6 +103,7 @@ import SelectSection from '@/sections/SelectSection';
 import SidenavSection from '@/sections/SidenavSection';
 import SliderSection from '@/sections/SliderSection';
 import SwitchesSection from '@/sections/SwitchesSection';
+import TablesSection from '@/sections/TablesSection';
 import TabsSection from '@/sections/TabsSection';
 import DateAndTimePickersSection from '@/sections/DateAndTimePickersSection';
 import ThemeSwitch from '@/ThemeSwitch'
@@ -112,6 +116,7 @@ cssVars({
 export default {
   name: 'TestApp',
   components: {
+    TablesSection,
     FooterSection,
     CollapsibleSection,
     ChipsSection,
