@@ -80,7 +80,7 @@
 </template>
 
 <script>
-import BadgesSection from '@/sections/BadgesSection';
+import BadgesSection from '@/sections/CollectionsSection';
 import BreadcrumbsSection from '@/sections/BreadcrumbsSection';
 import ButtonsSection from '@/sections/ButtonsSection';
 import CardsSection from '@/sections/CardsSection';
