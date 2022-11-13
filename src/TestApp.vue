@@ -22,7 +22,7 @@
         <li><a href="#select-block">Select</a></li>
         <li><a href="#sidenav">Sidenav</a></li>
         <li><a href="#tabs">Tabs</a></li>
-        <li><a href="#time-picker">Time picker</a></li>
+        <li><a href="#date-and-time-pickers">Time picker</a></li>
         <li><a href="#slider">Slider</a></li>
         <li><a href="#switches">Switches</a></li>
         <li><a href="#checkboxes">Checkboxes</a></li>
@@ -47,7 +47,7 @@
 
     <tabs-section id="tabs" class="block section scrollspy"/>
 
-    <time-picker-section id="time-picker" class="block section scrollspy"/>
+    <date-and-time-pickers-section id="date-and-time-pickers" class="block section scrollspy"/>
 
     <slider-section id="slider" class="block section scrollspy"/>
 
@@ -97,7 +97,7 @@ import SidenavSection from '@/sections/SidenavSection';
 import SliderSection from '@/sections/SliderSection';
 import SwitchesSection from '@/sections/SwitchesSection';
 import TabsSection from '@/sections/TabsSection';
-import TimePickerSection from '@/sections/TimePickerSection';
+import DateAndTimePickersSection from '@/sections/DateAndTimePickersSection';
 import ThemeSwitch from '@/ThemeSwitch'
 import cssVars from 'css-vars-ponyfill'
 
@@ -120,7 +120,7 @@ export default {
     CheckboxesSection,
     SwitchesSection,
     SliderSection,
-    TimePickerSection,
+    DateAndTimePickersSection,
     TabsSection, SidenavSection, SelectSection, DropdownSection, ButtonsSection, ThemeSwitch
   },
   mounted: function () {

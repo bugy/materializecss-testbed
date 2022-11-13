@@ -13,6 +13,7 @@ import 'materialize-css/js/autocomplete';
 import 'materialize-css/js/scrollspy';
 import 'materialize-css/js/range';
 import 'materialize-css/js/chips';
+import 'materialize-css/js/datepicker';
 import 'material-design-icons/iconfont/material-icons.css';
 import Vue from 'vue';
 import TestApp from '@/TestApp';
