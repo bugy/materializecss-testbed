@@ -34,6 +34,7 @@
         <li><a href="#carousel">Carousel</a></li>
         <li><a href="#chips">Chips</a></li>
         <li><a href="#collapsible">Collapsible</a></li>
+        <li><a href="#footer">Footer</a></li>
       </ul>
     </div>
 
@@ -73,6 +74,8 @@
 
     <collapsible-section id="collapsible" class="block section scrollspy"/>
 
+    <footer-section id="footer" class="block section scrollspy"/>
+
     <ThemeSwitch/>
 
   </div>
@@ -89,6 +92,7 @@ import CheckboxesSection from '@/sections/CheckboxesSection';
 import ChipsSection from '@/sections/ChipsSection';
 import CollapsibleSection from '@/sections/CollapsibleSection';
 import DropdownSection from '@/sections/DropdownSection';
+import FooterSection from '@/sections/FooterSection';
 import InputFieldsSection from '@/sections/InputFieldsSection';
 import PaginationSection from '@/sections/PaginationSection';
 import RadioButtonsSection from '@/sections/RadioButtonsSection';
@@ -108,6 +112,7 @@ cssVars({
 export default {
   name: 'TestApp',
   components: {
+    FooterSection,
     CollapsibleSection,
     ChipsSection,
     CarouselSection,
