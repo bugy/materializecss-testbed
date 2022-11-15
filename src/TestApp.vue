@@ -34,7 +34,8 @@
         <li><a href="#carousel">Carousel</a></li>
         <li><a href="#chips">Chips</a></li>
         <li><a href="#collapsible">Collapsible</a></li>
-        <li><a href="#tables">Tables</a></li>
+        <li><a href="#tables-section">Tables</a></li>
+        <li><a href="#preloaders-section">Preloaders</a></li>
         <li><a href="#footer">Footer</a></li>
       </ul>
     </div>
@@ -77,6 +78,8 @@
 
     <tables-section id="tables-section" class="block section scrollspy"/>
 
+    <preloader-section id="preloaders-section" class="block section scrollspy"/>
+
     <footer-section id="footer" class="block section scrollspy"/>
 
     <ThemeSwitch/>
@@ -98,6 +101,7 @@ import DropdownSection from '@/sections/DropdownSection';
 import FooterSection from '@/sections/FooterSection';
 import InputFieldsSection from '@/sections/InputFieldsSection';
 import PaginationSection from '@/sections/PaginationSection';
+import PreloaderSection from '@/sections/PreloaderSection';
 import RadioButtonsSection from '@/sections/RadioButtonsSection';
 import SelectSection from '@/sections/SelectSection';
 import SidenavSection from '@/sections/SidenavSection';
@@ -116,6 +120,7 @@ cssVars({
 export default {
   name: 'TestApp',
   components: {
+    PreloaderSection,
     TablesSection,
     FooterSection,
     CollapsibleSection,
