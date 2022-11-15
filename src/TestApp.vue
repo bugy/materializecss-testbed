@@ -36,6 +36,7 @@
         <li><a href="#collapsible">Collapsible</a></li>
         <li><a href="#tables-section">Tables</a></li>
         <li><a href="#preloaders-section">Preloaders</a></li>
+        <li><a href="#materialized-image-section">Materialized image</a></li>
         <li><a href="#footer">Footer</a></li>
       </ul>
     </div>
@@ -80,6 +81,8 @@
 
     <preloader-section id="preloaders-section" class="block section scrollspy"/>
 
+    <materialized-image-section id="materialized-image-section" class="block section scrollspy"/>
+
     <footer-section id="footer" class="block section scrollspy"/>
 
     <ThemeSwitch/>
@@ -100,6 +103,7 @@ import CollapsibleSection from '@/sections/CollapsibleSection';
 import DropdownSection from '@/sections/DropdownSection';
 import FooterSection from '@/sections/FooterSection';
 import InputFieldsSection from '@/sections/InputFieldsSection';
+import MaterializedImageSection from '@/sections/MaterializedImageSection';
 import PaginationSection from '@/sections/PaginationSection';
 import PreloaderSection from '@/sections/PreloaderSection';
 import RadioButtonsSection from '@/sections/RadioButtonsSection';
@@ -120,6 +124,7 @@ cssVars({
 export default {
   name: 'TestApp',
   components: {
+    MaterializedImageSection,
     PreloaderSection,
     TablesSection,
     FooterSection,
