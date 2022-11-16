@@ -83,6 +83,8 @@
 
     <materialized-image-section id="materialized-image-section" class="block section scrollspy"/>
 
+    <modals-section id="modals-section" class="block section scrollspy"/>
+
     <footer-section id="footer" class="block section scrollspy"/>
 
     <ThemeSwitch/>
@@ -104,6 +106,7 @@ import DropdownSection from '@/sections/DropdownSection';
 import FooterSection from '@/sections/FooterSection';
 import InputFieldsSection from '@/sections/InputFieldsSection';
 import MaterializedImageSection from '@/sections/MaterializedImageSection';
+import ModalsSection from '@/sections/ModalsSection';
 import PaginationSection from '@/sections/PaginationSection';
 import PreloaderSection from '@/sections/PreloaderSection';
 import RadioButtonsSection from '@/sections/RadioButtonsSection';
@@ -124,6 +127,7 @@ cssVars({
 export default {
   name: 'TestApp',
   components: {
+    ModalsSection,
     MaterializedImageSection,
     PreloaderSection,
     TablesSection,

@@ -3,7 +3,7 @@
     <h4 class="header">Materialized image <a href="https://materializecss.github.io/materialize/media.html">(docs)</a>
     </h4>
 
-    <img class="materialboxed" width="400" src="https://loremflickr.com/1024/768">
+    <img class="materialboxed" width="400" src="https://loremflickr.com/1024/768" data-caption="Test caption">
 
   </div>
 </template>
