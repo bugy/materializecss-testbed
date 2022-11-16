@@ -3,6 +3,13 @@
 
     <nav>
       <div class="nav-wrapper">
+        <form>
+          <div class="input-field">
+            <input id="search" type="search" required>
+            <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+            <i class="material-icons">close</i>
+          </div>
+        </form>
         <div class="header"></div>
         <a class="brand-logo" href="#">Logo</a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
@@ -166,6 +173,10 @@ export default {
 .block h4 {
   margin-top: 32px;
   margin-bottom: 32px;
+}
+
+.nav-wrapper {
+  display: flex;
 }
 
 </style>
