@@ -7,6 +7,35 @@
       </p>
       <div id="fancy-slider"></div>
     </form>
+
+    <div class="slider">
+      <ul class="slides">
+        <li>
+          <img src="https://loremflickr.com/640/480/city?lock=1"> <!-- random image -->
+          <div class="caption center-align">
+            <h3>This is our big Tagline!</h3>
+            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            <p>Some text</p>
+          </div>
+        </li>
+        <li class="active">
+          <img src="https://loremflickr.com/640/480/city?lock=2">
+          <div class="caption left-align">
+            <h3>Left Aligned Caption</h3>
+            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            <p>Some text</p>
+          </div>
+        </li>
+        <li>
+          <img src="https://loremflickr.com/640/480/city?lock=3">
+          <div class="caption right-align">
+            <h3>Right Aligned Caption</h3>
+            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            <p>Some text</p>
+          </div>
+        </li>
+      </ul>
+    </div>
   </div>
 
 </template>
@@ -14,6 +43,7 @@
 <script>
 import * as noUiSlider from 'materialize-css/extras/noUiSlider/nouislider';
 import 'materialize-css/extras/noUiSlider/nouislider.css';
+import 'materialize-css/js/slider';
 
 export default {
   name: 'SliderSection',
@@ -40,6 +70,9 @@ export default {
 
     const ranges = document.querySelectorAll('input[type=range]');
     M.Range.init(ranges);
+
+    const slider = document.querySelectorAll('.slider');
+    M.Slider.init(slider, {});
   }
 }
 </script>
@@ -49,5 +82,9 @@ input[type=range],
 #fancy-slider {
   width: 500px;
   margin-bottom: 48px;
+}
+
+.slider {
+  width: 480px;
 }
 </style>
