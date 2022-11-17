@@ -46,6 +46,7 @@
         <li><a href="#materialized-image-section">Materialized image</a></li>
         <li><a href="#modals-section">Modals</a></li>
         <li><a href="#tap-target-section">Tap Target</a></li>
+        <li><a href="#toast-section">Toasts</a></li>
         <li><a href="#footer">Footer</a></li>
       </ul>
     </div>
@@ -96,6 +97,8 @@
 
     <tap-target-section id="tap-target-section" class="block section scrollspy"/>
 
+    <toast-section id="toast-section" class="block section scrollspy"/>
+
     <footer-section id="footer" class="block section scrollspy"/>
 
     <ThemeSwitch/>
@@ -129,6 +132,7 @@ import TablesSection from '@/sections/TablesSection';
 import TabsSection from '@/sections/TabsSection';
 import DateAndTimePickersSection from '@/sections/DateAndTimePickersSection';
 import TapTargetSection from '@/sections/TapTargetSection';
+import ToastSection from '@/sections/ToastSection';
 import ThemeSwitch from '@/ThemeSwitch'
 import cssVars from 'css-vars-ponyfill'
 
@@ -139,6 +143,7 @@ cssVars({
 export default {
   name: 'TestApp',
   components: {
+    ToastSection,
     TapTargetSection,
     ModalsSection,
     MaterializedImageSection,
