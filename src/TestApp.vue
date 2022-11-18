@@ -47,6 +47,7 @@
         <li><a href="#modals-section">Modals</a></li>
         <li><a href="#tap-target-section">Tap Target</a></li>
         <li><a href="#toast-section">Toasts</a></li>
+        <li><a href="#tooltips-section">Tooltips</a></li>
         <li><a href="#footer">Footer</a></li>
       </ul>
     </div>
@@ -99,6 +100,8 @@
 
     <toast-section id="toast-section" class="block section scrollspy"/>
 
+    <tooltips-section id="tooltips-section" class="block section scrollspy"/>
+
     <footer-section id="footer" class="block section scrollspy"/>
 
     <ThemeSwitch/>
@@ -133,6 +136,7 @@ import TabsSection from '@/sections/TabsSection';
 import DateAndTimePickersSection from '@/sections/DateAndTimePickersSection';
 import TapTargetSection from '@/sections/TapTargetSection';
 import ToastSection from '@/sections/ToastSection';
+import TooltipsSection from '@/sections/TooltipsSection';
 import ThemeSwitch from '@/ThemeSwitch'
 import cssVars from 'css-vars-ponyfill'
 
@@ -143,6 +147,7 @@ cssVars({
 export default {
   name: 'TestApp',
   components: {
+    TooltipsSection,
     ToastSection,
     TapTargetSection,
     ModalsSection,

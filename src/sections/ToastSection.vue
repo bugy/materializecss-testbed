@@ -14,7 +14,10 @@ export default {
   name: 'ToastSection',
   methods: {
     onClick() {
-       M.toast({unsafeHTML: '<span>I am toast content</span><button class="btn-flat toast-action">Undo</button>'})
+      M.toast({
+        unsafeHTML: '<span>I am toast content</span><button class="btn-flat toast-action">Undo</button>',
+        displayLength: 10000
+      })
     }
   }
 }
